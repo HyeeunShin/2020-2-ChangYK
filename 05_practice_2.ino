@@ -19,13 +19,12 @@ void loop() {
   digitalWrite(7, toggle);
   delay(1000);
   
-  for (int i = 0; i<11; i ++) {
+  for (int i = 0; i<10; i ++) {
     toggle =toggle_state(toggle); //toggle LED value.
     digitalWrite(7 , toggle); // update LED status.
     delay(100);// wait for 250 milliseconds
   }
 
-  toggle = toggle_state(toggle);
   while (1) {
     digitalWrite(7, toggle);
   }
